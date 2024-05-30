@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body,html{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttons{
+            gap: 16px;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="buttons">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+            
+        </div>
+        <div class="anotherOne">First to 5 points wins</div>
+        <div class='text'>Player:0 PC:0</div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
